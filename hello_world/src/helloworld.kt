@@ -1,3 +1,5 @@
+import com.shreks.Person
+
 /*
  multiline comentary
  */
@@ -13,15 +15,7 @@ fun main(args: Array<String>){ //comentary
     string_dec2 = "World!"
     println(string_dec2)*/
 
-    var personobj = Person()
-    personobj.name = "Daniel"
-    personobj.display()
-}
-
-class Person(){
-    var name = ""
-
-    fun display(){
-        println("Hello, my name is ${this.name}")
-    }
+    var personobj = Person("Daniel", "Salinas")
+    personobj.display_name()
+    personobj.display_fullname()
 }
